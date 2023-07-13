@@ -31,3 +31,25 @@ Pero también realiza un seguimiento de los elementos que se han asignado o conf
 
 A medida que se agregan elementos a una ArrayList, es posible que su capacidad deba crecer. Todo esto sucede automáticamente, detrás de escena.
 Esta es la razón por la cual ArrayList es redimensionable.
+
+# Java Linked List
+
+Un lista enlazada es una lista en donde todos sus componentes estan enlazados directamente con su antecesor y con su predecesor, es por ello que puede aplicar con cola o como pila, a diferencia del arrayList que generalmente aplica como Array. La lista enlazada asi como los ArrayList utilizan la misma interfaz de list.
+
+Las colas son colecciones de data de tipo FIFO, utilizan procesos especiales y aplicables cuando se trabaje el linked List como cola, poll <- Elimina desde el inicio de la cola y offer <- Ingresa al final de la cola. Adicionalmente las colas pueden ser singled-ended cuando solo se gestionan los ingresos de data al final y la extracción desde el inicio, y pueden ser double-ended, permite el ingreso y la extracción de datos desde ambos extremos. 
+
+![Colas](image.png)
+
+Las pilas son colecciones de data de tipo LIFO, es una representación vertical de datos que solo permite el acceso de la data desde la parte superior de la misma, utilizan al igual que las colas procesos especiales y aplicables al momento de que logicamente se utilice la Linked List como pila, pop <- para extraer data de la pila y push <- para insertar data a la pila.
+
+![Pilas](image-1.png)
+
+# Iteradores y Iteradores de Lista (Iterators & ListIterators)
+
+Los iteradores (iterators) son objetos que nos entrega JAVA para poder recorrer las listas, este ojeto viene en la interfaz de List, cuando se instancia, lo que nos permite, es mediante funciones internas recorrer las listas y o colecciones como las haria un cursor de BBDD, internamente al momento de declarar el iterador, este se posiciona antes del index 0 de la lista y obtiene la información contenida en la siguiente posicion de la lista mediante la funcion next(), para poder recorrer las listas se utiliza un loop While y este opera mediante la funcion hasNext(), esta funcion retorna un booleano y sera verdadero mientras en la lista se encuentre un siguiente elemento al cual moverse.
+
+El iterador siempre se mueve entre las posiciones de una lista / coleccion.
+
+![Iterator](image-2.png)
+
+Adicional a la posibilidad de recorrer nuestra lista tambien podemos eliminar elementos mediante el proceso `remove()`, podemos agregar un nuevo elemento mediante el proceso `add()` y finalmente podemos editar un elemento mediante el proceso `set()`

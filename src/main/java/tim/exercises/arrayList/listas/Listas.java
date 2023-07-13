@@ -1,11 +1,9 @@
-package prueba.listas;
+package tim.exercises.arrayList.listas;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.stream.Stream;
 
 record Item(String name, String type, int cant){
     public Item(String name, String type) {
@@ -38,7 +36,7 @@ public class Listas {
 
         System.out.println(nuevoArrayList);
 
-        ArrayList otroArrayList = new ArrayList<>(List.of("articulo 6", "articulo 7", "articulo 8", "articulo 9", "articulo 10"));
+        ArrayList<String> otroArrayList = new ArrayList<>(List.of("articulo 6", "articulo 7", "articulo 8", "articulo 9", "articulo 10"));
 
         nuevoArrayList.addAll(otroArrayList);
         System.out.println(nuevoArrayList);
@@ -54,11 +52,11 @@ public class Listas {
         listaItems.add(new ListItem("item 4", "not default"));
         
 
-        if(listaItems.contains(new Item("item 1"))){
+        if(listaItems.contains(new ListItem("item 1"))){
             System.out.println("lo contiene");
         }
 
-        System.out.println(listaItems.indexOf(new Item("item 1")));
+        System.out.println(listaItems.indexOf(new ListItem("item 1")));
 
         listaItems.forEach((ListItem item) -> System.out.println("nombre: " + item.name + ", cantidad: " + item.cantidad) );        
 

@@ -1,4 +1,4 @@
-package challenges.arrayList;
+package tim.exercises.challanges;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Scanner;
@@ -8,7 +8,7 @@ public class ArrayListChallenge {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         
-        ArrayList<String> elements = new ArrayList();
+        ArrayList<String> elements = new ArrayList<>();
     
         boolean flag = true;
 

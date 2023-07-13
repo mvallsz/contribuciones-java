@@ -1,4 +1,4 @@
-package prueba.listas;
+package tim.exercises.arrayList.listas;
 
 public class ListItem {
     public String name;
@@ -7,6 +7,10 @@ public class ListItem {
 
     public ListItem(){
         this("default Item", "defautl type");
+    }
+
+    public ListItem(String name){
+        this(name, "defautl type");
     }
 
     public ListItem(String name, String type){
