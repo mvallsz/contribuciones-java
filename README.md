@@ -38,11 +38,11 @@ Un lista enlazada es una lista en donde todos sus componentes estan enlazados di
 
 Las colas son colecciones de data de tipo FIFO, utilizan procesos especiales y aplicables cuando se trabaje el linked List como cola, poll <- Elimina desde el inicio de la cola y offer <- Ingresa al final de la cola. Adicionalmente las colas pueden ser singled-ended cuando solo se gestionan los ingresos de data al final y la extracción desde el inicio, y pueden ser double-ended, permite el ingreso y la extracción de datos desde ambos extremos. 
 
-![Colas](image.png)
+![Colas](src/main/resources/image.png)
 
 Las pilas son colecciones de data de tipo LIFO, es una representación vertical de datos que solo permite el acceso de la data desde la parte superior de la misma, utilizan al igual que las colas procesos especiales y aplicables al momento de que logicamente se utilice la Linked List como pila, pop <- para extraer data de la pila y push <- para insertar data a la pila.
 
-![Pilas](image-1.png)
+![Pilas](src/main/resources/image-1.png)
 
 # Iteradores y Iteradores de Lista (Iterators & ListIterators)
 
@@ -50,6 +50,26 @@ Los iteradores (iterators) son objetos que nos entrega JAVA para poder recorrer 
 
 El iterador siempre se mueve entre las posiciones de una lista / coleccion.
 
-![Iterator](image-2.png)
+![Iterator](src/main/resources/image-2.png)
 
 Adicional a la posibilidad de recorrer nuestra lista tambien podemos eliminar elementos mediante el proceso `remove()`, podemos agregar un nuevo elemento mediante el proceso `add()` y finalmente podemos editar un elemento mediante el proceso `set()`
+
+# Boxing (Autoboxing y unboxing)
+
+El boxing es la manera en que JAVA habilita el uso e interacción de objetos y clases con los tipos de datos primitivos.
+
+Datos primitivos:
+byte
+short
+int
+long
+float
+double
+boolean
+char
+
+Para poder generar por ejemplo un ArrayList de datos enteros, JAVA no permite que se pueda generar a partir de la definicion primitiva (int) Ejemplo: ArrayList<int> misEnteros = new ArrayList<>(); <- este ejemplo nos generaria un error de compilación, ya que la clase ArrayList no soporta tipos de datos primitivos como tipos de colección.
+
+Es por ello que JAVA nos proporciona clases tipo wrapper para todos los tipos de datos primitivos, cuando establecemos el valor de un dato primitivo a la implementacion de estas clases wrapper, a ese proceso se le llama boxing, y cuando se requeire el valor primitivo desde implementacion se le llama unboxing.
+
+![Alt text](src/main/resources/imageboxing.png)
