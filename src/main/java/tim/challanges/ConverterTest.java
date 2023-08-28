@@ -1,4 +1,4 @@
-package tim.exercises.challanges;
+package tim.challanges;
 
 import java.util.ArrayList;
 import java.util.List;

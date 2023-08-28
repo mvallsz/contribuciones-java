@@ -73,3 +73,9 @@ Para poder generar por ejemplo un ArrayList de datos enteros, JAVA no permite qu
 Es por ello que JAVA nos proporciona clases tipo wrapper para todos los tipos de datos primitivos, cuando establecemos el valor de un dato primitivo a la implementacion de estas clases wrapper, a ese proceso se le llama boxing, y cuando se requeire el valor primitivo desde implementacion se le llama unboxing.
 
 ![Alt text](src/main/resources/imageboxing.png)
+
+# Clases abstractas
+
+# Interfaces
+
+# Clases Abstractas vs Interfaces
